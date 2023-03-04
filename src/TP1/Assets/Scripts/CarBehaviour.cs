@@ -7,7 +7,7 @@ public class CarBehaviour : MonoBehaviour {
 	public WheelCollider RR;
 	public WheelCollider RL;
 	public bool DetectLights = true;
-	public bool DetectCars = false;
+	public bool DetectCars = true;
 	public bool DetectBlocks = false;
 	public LightDetectorScript RightLD;
 	public LightDetectorScript LeftLD;

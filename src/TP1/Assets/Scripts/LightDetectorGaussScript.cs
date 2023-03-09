@@ -7,15 +7,19 @@ public class LightDetectorGaussScript : LightDetectorScript {
 
 	public float stdDev = 1.0f; 
 	public float mean = 0.0f; 
-	public float min_y;
+	// public float min_y;
 	public bool inverse = false;
 
 	// Get gaussian output value
 	public override float GetOutput()
-	{
-		//YOUR CODE HERE
+	{	
+		// to take a circle:
+		// right: std dev = 0.5; mean = 0.12
+		// left: std dev = 1.0; mean 0.0
+		float eExpoent = ((float) -Math.Pow(output-mean, 2)) / (float) (2.0f * Math.Pow(stdDev, 2));
+		float fDivision = 1.0f / (float) (stdDev * Math.Sqrt(2.0f * Math.PI));
+		float value = fDivision * (float) Math.Pow(Math.E, eExpoent);
 
-		return 0.0f;
+		return value;
 	}
-
 }

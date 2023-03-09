@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Meta1/DetectCars.unity
+- path: Assets/Scenes/Meta2/Circle.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

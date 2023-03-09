@@ -20,6 +20,11 @@ public class CarBehaviour2a : CarBehaviour {
 			leftSensor = LeftCD.GetOutput();
 			rightSensor = RightCD.GetOutput(); 
 		}
+		if (DetectBlocks)
+        {
+			leftSensor = LeftBD.GetOutput();
+			rightSensor = RightBD.GetOutput(); 
+		}
 
 
 		//Calculate target motor values

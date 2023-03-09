@@ -10,10 +10,7 @@ public class CarDetectorLinearScript : CarDetectorScript {
 
 	public override float GetOutput()
 	{
-	
-		//YOUR CODE HERE
-
-		return output;
+		return 1.0f - output;
 	}
 
 

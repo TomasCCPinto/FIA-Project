@@ -27,8 +27,7 @@ public class CarDetectorScript : MonoBehaviour {
 	void Update()
 	{
 		GameObject[] cars;
-		GameObject closestCar;
-		float max;
+		float closestCar = 200.0f;
 
 		if (useAngle) {
 			cars = GetVisibleCars();
@@ -36,26 +35,20 @@ public class CarDetectorScript : MonoBehaviour {
 			cars = GetAllCars();
 		}
 		numObjects = cars.Length;
-		closestCar = cars[0];
-		max = (transform.position - closestCar.transform.position).sqrMagnitude;
-		max = 1.0f / (max + 1);
 		output = 0;
 
+		// detect the closest vehicle
 		foreach (GameObject car in cars) {
 			// print (1 / (transform.position - car.transform.position).sqrMagnitude);
-
 			float distance = (transform.position - car.transform.position).sqrMagnitude;
-			output = 1.0f / (distance + 1);
 
-			if (output > max)
-			{
-				closestCar = car;
-				max = output;
+			if (distance < closestCar) {
+				closestCar = distance;
 			}
 
-			Debug.DrawLine (transform.position, closestCar.transform.position, Color.green);
+			// Debug.DrawLine (transform.position, car.transform.position, Color.blue);
 		}
-		output = max;
+		output = 1.0f / (closestCar + 1);
 	}
 
 	public virtual float GetOutput() { throw new NotImplementedException(); }

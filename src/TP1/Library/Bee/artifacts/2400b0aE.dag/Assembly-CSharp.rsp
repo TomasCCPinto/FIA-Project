@@ -363,6 +363,7 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/home/joaomoreira/Unity/Hub/Editor/2023.1.0a26/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/joaomoreira/Unity/Hub/Editor/2023.1.0a26/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/BlockDetectorGaussScript.cs"
 "Assets/Scripts/BlockDetectorLinearScript.cs"
 "Assets/Scripts/BlockDetectorScript.cs"
 "Assets/Scripts/CarBehaviour.cs"

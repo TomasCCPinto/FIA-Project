@@ -7,15 +7,56 @@ public class CarDetectorGaussScript : CarDetectorScript {
 
 	public float stdDev = 0.4f; // ellipsis with normal distribution
 	public float mean = 0.8f; // ellipsis with normal distribution
+	public bool inverse = false;
 	
-	// Get gaussian output value
-	public override float GetOutput()
+	private float GetGaus() 
 	{
+		float eExpoent = ((float) -Math.Pow(output-mean, 2)) / (float) (2.0f * Math.Pow(stdDev, 2));
+		float fDivision = 1.0f / (float) (stdDev * Math.Sqrt(2.0f * Math.PI));
+		float value = fDivision * (float) Math.Pow(Math.E, eExpoent);
 
-		//YOUR CODE HERE
-
-		return 0.0f;
+		return value;
 	}
 
+	private float GetLimiarLinearOutput() 
+	{
+		float energy = 0.0f;
+		if (MinX <= output && output <= MaxX)
+		{
+			energy = output;
+		}
+		return energy;
+	}
 
+	private float GetThreasholdLinearOutput(float energy) 
+	{
+		if (energy >= MaxY)
+			energy = MaxY;
+		else if (energy <= MinY)
+			energy = MinY;
+
+		return energy;
+	}
+
+	// Get gaussian output value
+	public override float GetOutput()
+	{	
+		// to take a circle:
+		// right: std dev = 0.5; mean = 0.12
+		// left: std dev = 1.0; mean 0.0
+		float energy = GetGaus();
+		if (ApplyLimits) 
+		{
+			energy = GetLimiarLinearOutput();
+		}
+		if (ApplyThresholds)
+		{
+			energy = GetThreasholdLinearOutput(energy);
+		}
+		if (inverse)
+		{
+			energy = 1.0f - energy;
+		}
+		return energy;
+	}
 }

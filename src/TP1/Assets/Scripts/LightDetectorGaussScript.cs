@@ -57,6 +57,7 @@ public class LightDetectorGaussScript : LightDetectorScript {
 		{
 			energy = 1.0f - energy;
 		}
+		print(energy);
 		return energy;
 	}
 }

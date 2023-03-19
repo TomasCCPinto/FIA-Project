@@ -443,14 +443,14 @@ PrefabInstance:
     - target: {fileID: 11496184, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: LeftLD
       value: 
-      objectReference: {fileID: 1796149540}
+      objectReference: {fileID: 1148516124}
     - target: {fileID: 11496184, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: RightLD
       value: 
-      objectReference: {fileID: 1148516124}
+      objectReference: {fileID: 1796149540}
     - target: {fileID: 11496184, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: MaxSpeed
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11496184, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: DetectBlocks
@@ -466,19 +466,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3621734815262107767, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: mean
-      value: 0.12
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3621734815262107767, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: stdDev
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4352541955692875312, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: mean
-      value: 0
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4352541955692875312, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}
       propertyPath: stdDev
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 450285534756404743, guid: a094c41ba2a5f421c9090afea1164b25, type: 3}

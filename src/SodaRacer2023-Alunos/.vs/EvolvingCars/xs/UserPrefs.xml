@@ -1,0 +1,45 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EvolvingCars/Commons/BitStringChromosome.cs">
+    <Files>
+      <File FileName="Assets/EvolvingCars/Car/Scripts/CarChromosome.cs" Line="8" Column="40" />
+      <File FileName="Assets/EvolvingCars/Commons/BitStringChromosome.cs" Line="12" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EvolvingCars" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="EvolvingCars" expanded="True">
+                  <Node name="Car" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
+                  <Node name="Commons" expanded="True">
+                    <Node name="BitStringChromosome.cs" selected="True" />
+                  </Node>
+                  <Node name="TP2" expanded="True">
+                    <Node name="Meta1" expanded="True">
+                      <Node name="TP2-Solutions" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ebf30970-8d00-4eb1-8c26-050df2c653e6" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nunolourenco/Documents/Teaching/2021-2022/FIA-IIA/UnityProjects/EvolvingCars/Assets/Editor/ExportPackage.cs" relfile="Assets/Editor/ExportPackage.cs" line="20" column="1" />
+      <Breakpoint file="/Users/nunolourenco/Documents/Teaching/2021-2022/FIA-IIA/UnityProjects/EvolvingCars/Assets/EvolvingCars/Car/Scripts/CarController.cs" relfile="Assets/EvolvingCars/Car/Scripts/CarController.cs" line="49" column="1" />
+      <Breakpoint file="/Users/nunolourenco/Documents/Teaching/2021-2022/FIA-IIA/UnityProjects/EvolvingCars/Assets/EvolvingCars/Commons/EvaluateBest.cs" relfile="Assets/EvolvingCars/Commons/EvaluateBest.cs" line="140" column="1" />
+      <Breakpoint file="/Users/nunolourenco/Documents/Teaching/2021-2022/FIA-IIA/UnityProjects/EvolvingCars/Assets/EvolvingCars/Commons/EvaluateBest.cs" relfile="Assets/EvolvingCars/Commons/EvaluateBest.cs" line="82" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

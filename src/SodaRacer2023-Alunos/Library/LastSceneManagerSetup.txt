@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/EvolvingCars/TP2/Scenes/EvaluationHill.unity
+- path: Assets/EvolvingCars/TP2/Scenes/ObstacleRoad.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
